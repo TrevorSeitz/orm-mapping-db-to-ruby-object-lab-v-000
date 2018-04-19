@@ -93,7 +93,7 @@ class Student
     SELECT *
     FROM students
     WHERE grade = 10
-    PRIMARY
+    binding.pry
     LIMIT x
     SQL
 
