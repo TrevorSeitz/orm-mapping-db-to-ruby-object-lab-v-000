@@ -93,11 +93,11 @@ class Student
     SELECT *
     FROM students
     WHERE grade = 10
+    PRIMARY
     LIMIT x
     SQL
 
     DB[:conn].execute(sql).map do |row|
-      binding.pry
       self.new_from_db(row)
     end
   end
